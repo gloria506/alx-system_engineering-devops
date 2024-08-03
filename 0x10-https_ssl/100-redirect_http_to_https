@@ -41,11 +41,11 @@ frontend gloria506-frontend
         default_backend gloria506-backend
 
 frontend gloria506-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/gloria506.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.gloria506.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend gloria506-backend
 
-backend clickviral-backend
+backend gloria506-backend
         balance roundrobin
-        server 151666-web-01 100.24.72.218:80 check
-        server 151666-web-02 52.91.137.12:80 check
+        server 262943-web-01 100.24.72.218:80 check
+        server 262943-web-02 52.91.137.12:80 check
