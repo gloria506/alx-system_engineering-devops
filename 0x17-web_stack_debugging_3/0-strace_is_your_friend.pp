@@ -1,4 +1,4 @@
-ng Apache returning a 500 error
+# Fixing Apache returning a 500 error
 
 exec { 'fix error':
   provider => 'shell',
